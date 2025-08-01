@@ -1,3 +1,4 @@
 # frontendmentor
  Desafios resolvidos da plataforma frontendmentor
-<a href="https://github.com/menezessanapaula/frontendmentor/tree/main/qrcode-resolucao"> QR Code
+ <h2>Projeto Finalizados</h2>
+<a href="https://github.com/menezessanapaula/frontendmentor/blob/main/qrcode-resolucao/index.html"> QR Code
