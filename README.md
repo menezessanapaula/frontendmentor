@@ -1,4 +1,7 @@
 # frontendmentor
  Desafios resolvidos da plataforma frontendmentor
- <h2>Projeto Finalizados</h2>
-<a href="https://github.com/menezessanapaula/frontendmentor/blob/main/qrcode-resolucao/index.html"> QR Code
+ <img src="qrcode-resolucao/design/">
+ <img src="qrcode-resolucao/design/mobile-design.jpg">
+ <img src="qrcode-resolucao/design/Pagina feita - Desktop.png">
+ <img src="pagina-de-receita/design/desktop-design.jpg">
+ <img src="pagina-de-receita/design/mobile-design.jpg">
