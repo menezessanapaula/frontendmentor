@@ -3,7 +3,8 @@
     padding: 0;
     background-color:#d5e1ef;
   }
-div{
+
+div {
     text-align: center;
     background-color: #ffffff;
     border: 1px solid #ffffff;
@@ -12,12 +13,14 @@ div{
     margin: 230px auto;
     border-radius: 20px;
 }
-img{
+
+img {
     width: 288px;
     height: 288px;
     margin: 16px 16px auto 16px;
     border-radius: 10px;
 }
+
 h2, p {
     background-color: #ffffff;
     font-family: 'Outfit', sans-serif;
@@ -26,7 +29,7 @@ h2, p {
 h2 {
     color:#1f314f;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 19px;
     font-style: normal;
     padding: 0;
     line-height: 120%;
@@ -34,12 +37,12 @@ h2 {
     height: 52px;
     margin: 24px auto 16px auto;
 }
-p{
+p {
     color: #68778d;
     font-weight: normal;
     font-size: 15px;
     font-style: normal;
-    line-height: 140%;
+    line-height: 120%;
     letter-spacing: 0.2px;
     width: 256px;
     height: 63px;
