@@ -8,31 +8,33 @@ body{
     text-align: center;
     width: 600px;
 }
-/* Sem arquivo Figma fica dificil definir com exatidão as margens, tamanhos e tudo que compõem o design da pagina*/
-div img{
+
+div img {
     border-radius: 10px;
     margin: 20px;
     width: 550px;
     }
-h1{
+
+h1 {
     text-align: left;
     line-height: 25px;
     margin: 30px;
 }
-p{
+
+p {
     font-size: 16px;
     text-align: left;
     margin: 30px;
 }
-/*Ainda não descobri como inserir novas fontes no Code. Guanabara vai me ajudar nisso!*/    
-.destaque{
+  
+.destaque {
     background-color:hsl(330, 100%, 98%);
     margin: 20px;
     border-radius: 10px;
     text-align: left;
     line-height: 25px;
 } 
-/* Fonte temporária para o arquivo*/
+
 h1, h2, h3, p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -43,8 +45,8 @@ h2, h3{
     margin: 20px;
 }
 
-.ingredientes{
-    margin: 20px 
+.ingredientes {
+    margin: 20px;
     line-height: 25px;
     border-top: 1px solid #d5d5d5;
     border-bottom: 1px solid #d5d5d5; 
@@ -58,10 +60,11 @@ h2, h3{
     margin: 20px;
     line-height: 25px;
 }
-/*Ainda não aprendi a modificar os numeros e pontos da lista*/
+
 .lista, .lista-numerada{
     text-align: left;
     line-height: 25px;
+
 }
 
 .texto-destaque{
