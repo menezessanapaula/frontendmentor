@@ -1,50 +1,86 @@
-*{
-    margin: 0;
-    padding: 0;
-    background-color:#d5e1ef;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-div {
-    text-align: center;
+body {
+    background-color: #d5e1ef;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qrcode-card {
     background-color: #ffffff;
     border: 1px solid #ffffff;
     width: 320px;
-    height: 499px;
-    margin: 230px auto;
+    padding: 24px 16px 40px 16px;
     border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31,49,79,0.15);
+    text-align: center;
+    animation: fadeIn 1s ease;
 }
 
-img {
+.qrcode-card img {
     width: 288px;
     height: 288px;
-    margin: 16px 16px auto 16px;
     border-radius: 10px;
+    margin-bottom: 16px;
+    transition: transform 0.3s;
 }
 
-h2, p {
-    background-color: #ffffff;
-    font-family: 'Outfit', sans-serif;
-    font-optical-sizing: auto;
-  }
-h2 {
-    color:#1f314f;
+.qrcode-card img:hover {
+    transform: scale(1.05);
+}
+
+.qrcode-card h2 {
+    color: #1f314f;
     font-weight: 700;
     font-size: 19px;
-    font-style: normal;
-    padding: 0;
-    line-height: 120%;
+    margin: 0 auto 16px auto;
+    line-height: 1.2;
     width: 256px;
-    height: 52px;
-    margin: 24px auto 16px auto;
 }
-p {
+
+.qrcode-card p {
     color: #68778d;
-    font-weight: normal;
     font-size: 15px;
-    font-style: normal;
-    line-height: 120%;
+    margin: 0 auto;
+    line-height: 1.2;
     letter-spacing: 0.2px;
     width: 256px;
-    height: 63px;
-    margin: 16px auto 40px auto;
+}
+
+/* Separador decorativo */
+.qrcode-card::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #d5e1ef;
+    margin: 0 auto 24px auto;
+    border-radius: 2px;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    .qrcode-card {
+        width: 95vw;
+        padding: 16px 4vw;
+    }
+    .qrcode-card img {
+        width: 80vw;
+        height: auto;
+        max-width: 260px;
+    }
+    .qrcode-card h2,
+    .qrcode-card p {
+        width: 90vw;
+        max-width: 220px;
+    }
 }
