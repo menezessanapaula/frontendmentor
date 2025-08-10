@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Receita de Omelete">
     <link rel="stylesheet" href="estilo.css">
-    <link rel="short icon" href="assets/images/favicon-32x32.png">
-    <title>Simple Omelete Recipe</title>
+    <!-- Corrigido: 'short icon' para 'shortcut icon' -->
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png">
+    <title>Simple Omelette Recipe</title>
 </head>
 <body>
     <div class="geral">
@@ -18,12 +19,12 @@
             </div>
         </div>
         <div class="preparação">
-        <h3>Preparation time</h3>
-        <ul>
-            <li><span class="texto-destaque">Total:</span> Approximately 10 minutes</li>
-            <li><span class="texto-destaque">Preparation:</span> 5 minutes</li>
-            <li><span class="texto-destaque">Cooking:</span> 5 minutes</li>
-        </ul>
+            <h3>Preparation time</h3>
+            <ul>
+                <li><span class="texto-destaque">Total:</span> Approximately 10 minutes</li>
+                <li><span class="texto-destaque">Preparation:</span> 5 minutes</li>
+                <li><span class="texto-destaque">Cooking:</span> 5 minutes</li>
+            </ul>
         </div>
         <div class="ingredientes">
             <h2>Ingredients</h2>
@@ -38,11 +39,16 @@
         <div class="instruções">
             <h2>Instructions</h2>
             <ol class="lista-numerada">
-                <li><span class="texto-destaque">Beat the eggs:</span> In a bow, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
-                <li><span class="texto-destaque">Heat the pan:</span> Pace a non-stick frying pan over medium heat and add butter or oil.</li>
-                <li><span class="texto-destaque">Cook the omelete:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
-                <li><span class="texto-destaque">Add fillings(optional):</span> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
-                <li><span class="texto-destaque">Fold and serve:</span> As the omelette continues to k, carefully lift one edge and fold t over the fillings. Let it cook o another minue, then slide it onto a plate.</li>
+                <!-- Corrigido: 'bow' para 'bowl' -->
+                <li><span class="texto-destaque">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+                <!-- Corrigido: 'Pace' para 'Place' -->
+                <li><span class="texto-destaque">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+                <!-- Corrigido: 'omelete' para 'omelette' -->
+                <li><span class="texto-destaque">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+                <!-- Corrigido: 'Add fillings(optional)' para 'Add fillings (optional)' -->
+                <li><span class="texto-destaque">Add fillings (optional):</span> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+                <!-- Corrigido: vários erros de digitação -->
+                <li><span class="texto-destaque">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
                 <li><span class="texto-destaque">Enjoy:</span> Serve hot, with additional salt and pepper if needed.</li>
             </ol>
         </div>
@@ -68,6 +74,7 @@
                 </tr>
             </table>
         </div>
+        <button class="btn-imprimir" onclick="window.print()">Imprimir receita</button>
     </div>
 </body>
 </html>
