@@ -22,9 +22,9 @@ body {
     font-family: var(--fonte-geral);
     background-color: var(--cor-fundo);
     display: flex;
-    align-items: center; <!-- centraliza verticalmente o card / alinha os eixos transversal - perpendicular ao eixo principal -->
+    align-items: center; /*centraliza verticalmente o card / alinha os eixos transversal - perpendicular ao eixo principal */
     justify-content: center;
-    min-height: 100vh; <!-- altura mínima da tela -->
+    min-height: 100vh; /*altura mínima da tela*/
 }
 
 #card-principal {
@@ -35,12 +35,12 @@ body {
     box-shadow: 8px 8px var(--cor-sombra);
     margin: auto;
     display: flex; 
-    flex-direction: column; <!-- organiza os elementos filhos em coluna -->
-    transition: transform 0.3s; <!-- adiciona uma transição suave para a transformação -->
-    animation: fadeIn 0.7s; <!-- animação de fade-in ao carregar o card -->
+    flex-direction: column; /*organiza os elementos filhos em coluna*/
+    transition: transform 0.3s; /*adiciona uma transição suave para a transformação*/
+    animation: fadeIn 0.7s; /*animação de fade-in ao carregar o card*/
 }
 
-#card-principal:hover { <!-- efeito ao passar o mouse sobre o card -->
+#card-principal:hover { /*efeito ao passar o mouse sobre o card*/
     transform: translateY(-6px) scale (1.02);
     box-shadow: 8px 16px 16px var(--cor-sombra);
 }
@@ -50,12 +50,12 @@ body {
     height: 200px;
     border-radius: 10px;
     margin: 24px;
-    object-fit: cover; <!-- garante que a imagem cubra todo o espaço disponível sem distorção -->
-    transition: filter 0.3s; <!-- adiciona uma transição suave para o filtro -->
+    object-fit: cover; /*garante que a imagem cubra todo o espaço disponível sem distorção*/
+    transition: filter 0.3s; /*adiciona uma transição suave para o filtro*/
 }
 
 .imagem-artigo:hover {
-    filter: brightness(0.9); <!-- escurece a imagem ao passar o mouse -->
+    filter: brightness(0.9); /*escurece a imagem ao passar o mouse*/
 }
 
 .categoria {
@@ -75,7 +75,7 @@ body {
     color: var(--cor-texto);
     font-weight: 400;
     display: flex;
-    margin: 12px 24px; <!-- margem superior e inferior de 12px, lateral de 24px -->
+    margin: 12px 24px; /*margem superior e inferior de 12px, lateral de 24px*/
 }
 
 h1 {
@@ -83,12 +83,12 @@ h1 {
     font-weight: 800;
     margin: 12px 24px 12px 24px;
     color: var(--cor-texto);
-    letter-spacing: 0.5px; <!-- espaçamento entre letras -->
+    letter-spacing: 0.5px; /*espaçamento entre letras*/
 }
 
 h1:hover {
-    color: var(--cor-fundo-texto); <!-- muda a cor do título ao passar o mouse -->
-    cursor: default <!-- indicar que é clicável -->
+    color: var(--cor-fundo-texto); /*muda a cor do título ao passar o mouse*/
+    cursor: default /*indicar que é clicável*/
 }
 
 p {
@@ -100,7 +100,7 @@ p {
 .card-footer{
     display: flex;
     align-items: center;
-    gap: 12px; <!-- espaçamento entre os elementos do rodapé -->
+    gap: 12px; /*espaçamento entre os elementos do rodapé*/
 }
 .card-footer img {
     display: flex;
