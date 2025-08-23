@@ -4,12 +4,12 @@
 :root {
     --cor-fundo: #f4d04e;
     --cor-card: #ffffff;
-    --cor-sombra: #11111122;
-    --cor-cinza: #6b6b6b;
-    --cor-titulo: #1a1a1a;
-    --cor-categoria: #f4d04e;
+    --cor-fundo-texto: #f4d04e;
+    --cor-texto: #111111;
+    --cor-paragrafo: #6b6b6b;
+    --cor-sombra: #111111;
 
-    --font-principal: 'Figtree', sans-serif;
+    --fonte-geral: 'Figtree', sans-serif;
 }
 
 * {
@@ -19,137 +19,105 @@
 }
 
 body {
+    font-family: var(--fonte-geral);
     background-color: var(--cor-fundo);
-    font-family: var(--font-principal);
-    min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: center; <!-- centraliza verticalmente o card / alinha os eixos transversal - perpendicular ao eixo principal -->
     justify-content: center;
+    min-height: 100vh; <!-- altura mínima da tela -->
 }
 
-#card {
-    background-color: var(--cor-card);
+#card-principal {
     width: 384px;
-    min-height: 522px;
+    height: 522px;
+    background-color: var(--cor-card);
+    border-radius: 20px;
+    box-shadow: 8px 8px var(--cor-sombra);
     margin: auto;
-    border-radius: 20px;
-    box-shadow: 0 8px 32px var(--cor-sombra);
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    transition: transform 0.2s;
-    animation: fadeIn 0.8s;
+    display: flex; 
+    flex-direction: column; <!-- organiza os elementos filhos em coluna -->
+    transition: transform 0.3s; <!-- adiciona uma transição suave para a transformação -->
+    animation: fadeIn 0.7s; <!-- animação de fade-in ao carregar o card -->
 }
 
-#card:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 16px 40px #11111133;
+#card-principal:hover { <!-- efeito ao passar o mouse sobre o card -->
+    transform: translateY(-6px) scale (1.02);
+    box-shadow: 8px 16px 16px var(--cor-sombra);
 }
 
-.card-image {
-    border-radius: 20px;
-    margin: 24px 24px 0 24px;
-    width: calc(100% - 48px);
+.imagem-artigo {
+    width: 336px;
     height: 200px;
-    object-fit: cover;
-    transition: filter 0.3s;
+    border-radius: 10px;
+    margin: 24px;
+    object-fit: cover; <!-- garante que a imagem cubra todo o espaço disponível sem distorção -->
+    transition: filter 0.3s; <!-- adiciona uma transição suave para o filtro -->
 }
 
-.card-image:hover {
-    filter: brightness(0.95) saturate(1.1);
+.imagem-artigo:hover {
+    filter: brightness(0.9); <!-- escurece a imagem ao passar o mouse -->
 }
 
-.categoria, .card-header h2 {
-    display: inline-block;
-    font-size: 14px;
-    background-color: var(--cor-categoria);
-    color: var(--cor-titulo);
+.categoria {
+    font-size: 16px;
     font-weight: 800;
-    line-height: 24px;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo-texto);
     border-radius: 4px;
     padding: 4px 12px;
-    margin: 24px 0 8px 24px;
-    font-family: var(--font-principal);
-    letter-spacing: 0.5px;
+    margin: 24px;
+    width: 82px;
+    height: 29px;
 }
 
-.data-publicacao, h3 {
-    font-size: 12px;
-    color: var(--cor-cinza);
-    font-weight: 600;
-    margin: 0 0 0 24px;
-    padding: 0;
-    font-family: var(--font-principal);
+.data-publicacao {
+    font-size: 14px;
+    color: var(--cor-texto);
+    font-weight: 400;
+    display: flex;
+    margin: 12px 24px; <!-- margem superior e inferior de 12px, lateral de 24px -->
 }
 
 h1 {
     font-size: 24px;
-    color: var(--cor-titulo);
-    font-weight: 900;
-    margin: 12px 24px 0 24px;
-    line-height: 1.2;
-    cursor: pointer;
-    transition: color 0.2s;
+    font-weight: 800;
+    margin: 12px 24px 12px 24px;
+    color: var(--cor-texto);
+    letter-spacing: 0.5px; <!-- espaçamento entre letras -->
 }
 
 h1:hover {
-    color: #f4d04e;
+    color: var(--cor-fundo-texto); <!-- muda a cor do título ao passar o mouse -->
+    cursor: default <!-- indicar que é clicável -->
 }
 
 p {
     font-size: 16px;
-    color: var(--cor-cinza);
     font-weight: 400;
-    margin: 12px 24px 0 24px;
-    line-height: 1.5;
+    color: var(--cor-paragrafo);
+    margin: 12px 24px 12px 24px;
 }
-
-.card-footer, footer {
+.card-footer{
     display: flex;
     align-items: center;
-    margin: 24px;
-    margin-top: auto;
-    gap: 12px;
+    gap: 12px; <!-- espaçamento entre os elementos do rodapé -->
 }
-
-.avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
+.card-footer img {
+    display: flex;
+    margin: 0px 0px 12px 24px;
     object-fit: cover;
-    border: 2px solid var(--cor-fundo);
 }
 
-.card-footer h4, .autor {
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--cor-titulo);
-    margin-left: 8px;
+.autor {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--cor-texto);
 }
 
-/* Animação de entrada */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px);}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px);}
     to { opacity: 1; transform: translateY(0);}
 }
-
-/* Responsividade */
-@media (max-width: 430px) {
-    #card {
-        width: 95vw;
-        min-width: 0;
-    }
-    .card-image {
-        width: 90vw;
-        height: 160px;
-        margin: 16px 5vw 0 5vw;
-    }
-    h1, p, .categoria, .data-publicacao {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
-    .card-footer, footer {
-        margin-left: 5vw;
-        margin-right: 5vw;
-    }
+#card-principal {
+    animation: slideUp 0.8s;
 }
