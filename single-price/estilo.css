@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --card-geral: white;
+    --cor-primaria: hsl(179,62%,43%);
+    --cor-primaria-verde: hsl(71,73%,54%);
+    --cor-secundaria:hsl(179, 58%, 53%);
+    --cor-neutra: hsl(204,43%,93%);
+    --cor-neutra-cinza: hsl(218,22%,67%);
+    --fonte-body:'Karla', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-neutra);
+    font-family: var(--fonte-body);
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+}
+
+.geral {
+    width: 1024px;
+    height: 700px;
+    background-color: var(--cor-neutra);
+    /*Centralizar tanto na vertical como na horizontal*/
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.qd-branco {
+    box-sizing: content-box;
+    width: 100%;
+    height: 40%;
+    background-color: var(--card-geral);
+}
+
+h1 {
+    color: var(--cor-primaria);
+    font-size: 30px;
+    padding: 40px 0 20px 50px;
+}
+
+h3 {
+    color: var(--cor-primaria-verde);
+    font-size: 24px;
+    padding: 0 0 5px 50px;
+}
+
+.descricao {
+    color: var(--cor-neutra-cinza);
+    font-weight: 400;
+    font-size: 22px;
+    padding: 10px 0 0 50px;
+}
+
+.qd-price {
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: 400;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 50%;
+    gap: 0;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+.quadro-1 {
+    background-color: var(--cor-primaria);
+    font-size: 20px;
+}
+
+.qd {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.price {
+    font-size: 38px;
+    font-weight: 600;
+    color: var(--card-geral);
+    padding: 10px 0 0 50px;
+}
+
+.detalhe {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.detail {
+    padding: 10px 0 0 50px;
+}
+
+h2 {
+    font-size: 24px;
+    letter-spacing: 1.4px;
+    padding: 50px 0 0 50px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 38px;
+}
+
+button {
+    background-color: var(--cor-primaria-verde);
+    width: 320px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    color: var(--card-geral);
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.quadro-2 {
+    background-color: var(--cor-secundaria);
+    display: inline-block;
+}
+
+.paragrafo {
+    color: rgba(255, 255, 255, 0.651);
+    padding: 20px 0 20px 50px;
+    font-size: 17px;
+}

@@ -97,11 +97,13 @@ p {
     color: var(--cor-paragrafo);
     margin: 12px 24px 12px 24px;
 }
-.card-footer{
+
+.card-footer {
     display: flex;
     align-items: center;
     gap: 12px; /*espaçamento entre os elementos do rodapé*/
 }
+
 .card-footer img {
     display: flex;
     margin: 0px 0px 12px 24px;
@@ -118,6 +120,7 @@ p {
     from { opacity: 0; transform: translateY(40px);}
     to { opacity: 1; transform: translateY(0);}
 }
+
 #card-principal {
     animation: slideUp 0.8s;
 }
